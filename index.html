@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YapGamedev</title>
+</head>
+<body>
+    <h1 style="font-size: 50px;">YapGamedev</h1>
+    <h2 class="aboutYapGD">YapGamedev is a small team founded by DeeOgikk on May 15, 2021. YapGamedev focuses on the indie horror game industry with short but thrilling fantasy stories. <br><br>
+
+        YapGamedev is based in Bali, Indonesia, so it's no wonder that some elements in the games, like the story, furniture, or main character's habits, are related to Indonesian culture. <br><br>
+        
+        DeeOgikk himself was born in 2007 and started learning about game development in 2020. He started focusing on game production in 2021. Before producing horror games, DeeOgikk often made random games like Pou Up Parkuor, Warm Ocean Parkuor, Lost Alone in the Forest, and others. Until one day, he fell in love with the horror theme and started creating horror games. <br><br>
+        
+        Oh, before really focusing on the horror industry, DeeOgikk often made devlog videos like Dani Dev, LixianTV, and others on his YouTube channel YapGamedev.</h2>
+
+    <div class="line"></div>
+    <h1>Let's be Friend!</h1>
+    <div class="socialMediaContainer">
+        <div class="socialMedia" onclick="youtube()"><h1>Youtube</h1></div>
+        <div class="socialMedia" onclick="instagram()"><h1>Instagram</h1></div>
+    </div>
+    <br>
+    <h1>Check out my Games on</h1>
+    <div class="socialMediaContainer">
+        <div class="socialMedia" onclick="itchio()"><h1>Itch.io</h1></div>
+    </div>
+</body>
+</html>
+
+<script>
+    function instagram() {
+        window.location.href = "https://www.instagram.com/deeogikk/"
+    }
+    function youtube() {
+        window.location.href = "https://www.youtube.com/@YapGD/"
+    }
+    function itchio() {
+        window.location.href = "https://yapgamedev.itch.io/"
+    }
+</script>
+
+<style>
+    body {
+        background-color: #101010;
+        color: white;
+        font-family: monospace;
+        text-align: center;
+        user-select: none;
+    }
+    .aboutYapGD {
+        width: 50%;
+        margin: auto;
+    }
+    .line {
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        height: 5px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .socialMedia {
+        width: 250px; height: 60px;
+        border-radius: 40px;
+        background-color: white;
+        transition: all 0.3s;
+        color: black;
+        text-align: center;
+    }
+    .socialMedia:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .socialMediaContainer {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+</style>
